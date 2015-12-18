@@ -166,7 +166,7 @@ $conn->close ();
 								$nowtime = date ( 'y-m-d h:i:s', time () );
 								$ms_host = "test"; // 这里是ODBC的连接名称
 								$ms_user = "weixin"; // 用户名
-								$ms_pass = "guan8899"; // 密码
+								$ms_pass = "123456"; // 密码
 								$conn = mssql_connect ( $ms_host, $ms_user, $ms_pass );
 								mssql_select_db ( "currentdb" );
 								$sql = "SELECT vipid,totalamount,totalinterest,status from vip where vipid=$vipid and status='有效'";
